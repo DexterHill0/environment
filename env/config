@@ -3,6 +3,11 @@ Host homer
   Hostname 217.155.193.113
   User msmall
 
+Host lisa
+  Port 1973
+  Hostname 192.168.178.58
+  User msmall
+
 Host office
   Hostname office.astrosat.space
   User mark.small

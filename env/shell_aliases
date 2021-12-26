@@ -21,7 +21,7 @@ alias h='history'
 alias du='du -h'
 alias df='df -h'
 alias vi='vim'
-alias ssh='ssh -X'
+#alias ssh='ssh -X'
 alias dc='cd'
 
 # Query the debian package manager database on already installed packages.
@@ -153,10 +153,11 @@ alias tdes='terraform '
 alias tdes='terraform '
 
 # terragrunt aliases
-# alias tgp='terragrunt plan'
-# alias tga='terragrunt apply'
+alias tgi='terragrunt init'
+alias tgp='terragrunt plan'
+alias tga='terragrunt apply'
 # alias tgaa='terragrunt apply-all'
-# alias tgap='terragrunt apply -auto-approve'
+alias tgap='terragrunt apply -auto-approve'
 
 alias rq='convert -strip -quality'
 
