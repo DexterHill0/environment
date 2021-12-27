@@ -8,6 +8,11 @@ Host lisa
   Hostname 192.168.178.58
   User msmall
 
+Host hibees
+  Port 1973
+  Hostname 192.168.178.39
+  User msmall
+
 Host office
   Hostname office.astrosat.space
   User mark.small
