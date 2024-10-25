@@ -37,11 +37,10 @@ fi
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND; }"'echo $ip $USER \
                       "$(history 1)" | uniq >> $HOME/.bash_enoch'
 
-export JAVA_HOME=/usr/local/edina/jdk1.7.0_21
 export TERM=xterm
 export EDITOR=vim
 export PAGER=less
-export PATH=$HOME/bin:$HOME/local/bin:$JAVA_HOME/bin:/usr/local/edina/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/usr/local/GNU/bin:/usr/ccs/bin:/home/cpan/bin:/usr/bin:/bin
+export PATH=$HOME/bin:$HOME/local/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/usr/local/GNU/bin:/usr/ccs/bin:/home/cpan/bin:/usr/bin:/bin
 
 
 #export PATH=$JAVA_HOME/bin:$HOME/local/bin:/usr/sfw/bin/:$PATH:/usr/ccs/bin
@@ -49,7 +48,6 @@ export PATH=$HOME/bin:$HOME/local/bin:$JAVA_HOME/bin:/usr/local/edina/bin:/usr/c
 #export ORACLE_SID=mmb
 #export TNS_ADMIN=$ORACLE_HOME/network/admin
 
-export LD_LIBRARY_PATH=/usr/local/edina/lib:$HOME/local/lib
 #export LD_LIBRARY_PATH=/usr/local/edina/lib:$HOME/local/lib:$HOME/local/include
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib:$ORACLE_HOME/lib
 
