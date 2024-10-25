@@ -1,30 +1,10 @@
 #!/bin/bash
 
-#mv $HOME/.bashrc $HOME/.bashrc.orig
-
-# Generate SSH Key
-cat /dev/zero | ssh-keygen -q -N ""
-
-# Generate GPG keyring
-cat >foo <<EOF
-     %echo Generating a basic OpenPGP key
-     Key-Type: default
-     Key-Length: 2048
-     Subkey-Type: default
-     Name-Real: Mark Small
-     Name-Comment: with stupid passphrase
-     Name-Email: marksmall@gmx.com
-     Expire-Date: 0
-     Passphrase: abc
-     # Do a commit here, so that we can later print "done" :-)
-     %commit
-     %echo done
-EOF
-gpg --batch --generate-key foo
-rm -rf foo
-
 # Setup oh-my-zsh
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
 
 # Setup static files.
 # Delete existing files
@@ -84,25 +64,7 @@ git clone git://github.com/tpope/vim-sensible.git
 # Add TMUX Plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# Add Node Version manager
-git clone https://github.com/nodenv/nodenv.git ~/.nodenv
-# Add node-build plugin for ndenv
-mkdir -p ~/.nodenv/plugins
-git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
+# Add ASDF version manager
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 
-# Add pyenv
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-cd ~/.pyenv && src/configure && make -C src && cd -
-
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
-
-cd ~/.pyenv/plugins/python-build/../.. && git pull && cd -
-
-git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
-
-chsh `whoami` -s /bin/zsh
+sudo chsh `whoami` -s /bin/zsh
