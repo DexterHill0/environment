@@ -1,17 +1,17 @@
 Host homer
   Port 1973
   Hostname 217.155.193.113
-  User msmall
+  User dhill
 
 Host lisa
   Port 1973
   Hostname 192.168.178.58
-  User msmall
+  User dhill
 
 Host hibees
   Port 1973
   Hostname 192.168.178.39
-  User msmall
+  User dhill
 
 Host office
   Hostname office.astrosat.space
@@ -57,7 +57,7 @@ Host rusty
   UserKnownHostsFile /dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
-  IdentityFile /home/msmall/dev/projects/github/copernicus-infrastructure/.vagrant/machines/rusty/virtualbox/private_key
+  IdentityFile ~/dev/projects/github/copernicus-infrastructure/.vagrant/machines/rusty/virtualbox/private_key
   IdentitiesOnly yes
   LogLevel FATAL
 
@@ -68,6 +68,6 @@ Host default
   UserKnownHostsFile /dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
-  IdentityFile /home/msmall/dev/projects/vagrant/infrastructure/.vagrant/machines/default/virtualbox/private_key
+  IdentityFile ~/dev/projects/vagrant/infrastructure/.vagrant/machines/default/virtualbox/private_key
   IdentitiesOnly yes
   LogLevel FATAL

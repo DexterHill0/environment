@@ -1,6 +1,6 @@
 ###
 #
-# Mark Small's Environment
+# Dexter Hill's Environment
 #
 ###
 if [ -n "$SSH_CLIENT" ]; then
@@ -58,6 +58,6 @@ if [ -n "$SSH_CLIENT" ]; then
 
 
 #export TERM=xterm-256color
-    export EDITOR="emacs"
+    export EDITOR="nano"
   fi
 fi

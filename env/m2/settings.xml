@@ -33,15 +33,15 @@
   <servers>
     <server>
       <id>edina-site</id>
-      <username>msmall1</username>
+      <username>dhill1</username>
     </server>
     <server>
       <id>edina-repository</id>
-      <username>msmall1</username>
+      <username>dhill1</username>
     </server>
     <server>
       <id>edina-snapshot-repository</id>
-      <username>msmall1</username>
+      <username>dhill1</username>
     </server>
   </servers>
 </settings>

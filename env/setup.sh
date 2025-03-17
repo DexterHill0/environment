@@ -10,7 +10,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 # Delete existing files
 rm -rf $HOME/.profile\
        $HOME/.bashrc \
-       $HOME/.bashrc_mark-small \
+       $HOME/.bashrc_dhill \
        $HOME/.bashrc_as\
        $HOME/.emacs \
        $HOME/.emacs.d \
@@ -22,7 +22,7 @@ rm -rf $HOME/.profile\
        $HOME/.zshrc \
        $HOME/.fonts \
        $HOME/.k5login \
-       $HOME/.oh-my-zsh/themes/msmall-agnoster.zsh-theme \
+       $HOME/.oh-my-zsh/themes/dhill-agnoster.zsh-theme \
        $HOME/.m2 \
        $HOME/.tmux.conf \
        $HOME/.ackrc \
@@ -33,7 +33,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # Recreate from configured.
 ln -s $DIR/profile $HOME/.profile
 ln -s $DIR/bashrc $HOME/.bashrc
-ln -s $DIR/bashrc_mark-small $HOME/.bashrc_mark-small
+ln -s $DIR/bashrc_dhill $HOME/.bashrc_dhill
 ln -s $DIR/bashrc_as $HOME/.bashrc_as
 ln -s $DIR/emacs $HOME/.emacs
 ln -s $DIR/emacs.d $HOME/.emacs.d
@@ -47,7 +47,7 @@ ln -s $DIR/shell_aliases $HOME/.shell_aliases
 ln -s $DIR/shell_secrets $HOME/.shell_secrets
 ln -s $DIR/fonts $HOME/.fonts
 ln -s $DIR/k5login $HOME/.k5login
-ln -s $DIR/msmall-agnoster.zsh-theme $HOME/.oh-my-zsh/themes/msmall-agnoster.zsh-theme
+ln -s $DIR/dhill-agnoster.zsh-theme $HOME/.oh-my-zsh/themes/dhill-agnoster.zsh-theme
 ln -s $DIR/m2 $HOME/.m2
 ln -s $DIR/tmux.conf $HOME/.tmux.conf
 ln -s $DIR/ackrc $HOME/.ackrc

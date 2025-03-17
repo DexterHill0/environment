@@ -77,7 +77,7 @@
 
 ;; User stuff.
 (setq user-full-name "Mark Small")
-(setq user-name "msmall1")
+(setq user-name "dhill1")
 (setq user-mail "m.small@ed.ac.uk")
 
 ;; Set word-wrap

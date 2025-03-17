@@ -12,7 +12,7 @@ Directory Structure:
     inputrc
     vimrc
     zshrc
-    msmall-agnoster.zsh-theme
+    dhill-agnoster.zsh-theme
   fonts/
     ttf-dejavu-powerline
 

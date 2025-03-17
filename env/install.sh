@@ -8,10 +8,13 @@ sudo apt install -y zsh emacs-nox tmux apt-transport-https aptitude ca-certifica
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] http://packages.microsoft.com/repos/vscode stable main"
 
-#curl -fsSL https://packagecloud.io/install/repositories/slacktechnologies/slack/script.deb.sh | sudo bash
-#curl -fsSL https://slack.com/gpg/slack_pubkey.gpg | apt-key add -
-#wget -q https://slack.com/gpg/slack_pubkey.gpg -O- | apt-key add -
-#add-apt-repository "deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main"
+curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+sudo chmod 644 /usr/share/keyrings/helm.gpg
+add-apt-repository "deb [arch=amd64 signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main"
+
+curl https://slack.com/gpg/slack_pubkey_20240822.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/slack.gpg > /dev/null
+sudo chmod 644 /usr/share/keyrings/slack.gpg
+add-apt-repository "deb https://packagecloud.io/slacktechnologies/slack/debian/ jessie main"
 
 #curl -sS https://download.spotify.com/debian/pubkey.gpg | apt-key add -
 #add-apt-repository "deb http://repository.spotify.com stable non-free"

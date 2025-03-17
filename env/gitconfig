@@ -1,17 +1,17 @@
 [user]
-	name = Mark Small
-	email = mark.small@astrosat.space
+	name = DexterHill0
+	email = dexter.hill@telespazio.com
 
 [color]
-        diff = auto
-        status = auto
-        branch = auto
+    diff = auto
+    status = auto
+    branch = auto
 	interactive = auto
         
 [core]
-	excludesfile = /home/msmall/.gitignore
+	excludesfile = ~/.gitignore
 	autocrlf = input
-	editor = emacs
+	editor = nano
 [alias]
 	st = status
 	co = checkout
@@ -37,7 +37,7 @@
 [merge]
 	tool = meld
 [commit]
-  template = ~/.gitmessage
+	template = ~/.gitmessage
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
